@@ -1,8 +1,11 @@
+import sys
+input = sys.stdin.readline
+
 n = int(input())
 files = {}
 
 for _ in range(n):
-  file = input()
+  file = input().strip()
   l = file.split('.')
   if l[1] in files.keys():
     files[l[1]] += 1
