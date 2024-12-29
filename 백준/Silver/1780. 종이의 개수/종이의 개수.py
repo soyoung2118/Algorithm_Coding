@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 n = int(input())
 
 lst = []
@@ -30,7 +33,6 @@ def check(x_start, y_start, length):
                 break
         if not same:
             break
-
     if same:
         append_result(sval)
     else:
