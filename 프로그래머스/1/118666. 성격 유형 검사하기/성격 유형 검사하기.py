@@ -14,25 +14,17 @@ def solution(survey, choices):
     
     answer = ""
     
-    if scores["R"] >= scores["T"]:
-        answer += "R"
-    else: 
-        answer += "T"
+    if scores["R"] >= scores["T"]: answer += "R"
+    else: answer += "T"
     
-    if scores["C"] >= scores["F"]:
-        answer += "C"  
-    else: 
-        answer += "F"
+    if scores["C"] >= scores["F"]: answer += "C"  
+    else: answer += "F"
     
-    if scores["J"] >= scores["M"]:
-        answer += "J"  
-    else: 
-        answer += "M"
+    if scores["J"] >= scores["M"]: answer += "J"  
+    else: answer += "M"
     
-    if scores["A"] >= scores["N"]:
-        answer += "A"  
-    else: 
-        answer += "N"
+    if scores["A"] >= scores["N"]: answer += "A"  
+    else: answer += "N"
     
     return answer
 
