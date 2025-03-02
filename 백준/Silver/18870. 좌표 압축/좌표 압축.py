@@ -1,12 +1,9 @@
 import sys
-input = sys.stdin.readline
 
-N = int(input())
+N = int(sys.stdin.readline().strip())
+lst = list(map(int, sys.stdin.readline().split()))
 
-lst = list(map(int, input().split()))
-sort_lst = sorted(list(set(lst)))
+sort_lst = sorted(set(lst))  
+index_map = {value: idx for idx, value in enumerate(sort_lst)} 
 
-index_map = {value: idx for idx, value in enumerate(sort_lst)}
-
-for i in range(N):
-  print(index_map[lst[i]])
+print(' '.join(map(str, (index_map[x] for x in lst)))) 
